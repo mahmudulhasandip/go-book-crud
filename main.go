@@ -15,5 +15,5 @@ func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
-	log.Fatal(http.ListenAndServe(":80", r))
+	log.Fatal(http.ListenAndServe("https://go-book-crud-production.up.railway.app", r))
 }
