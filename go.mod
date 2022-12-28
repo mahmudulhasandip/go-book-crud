@@ -3,7 +3,9 @@ module github.com/mahmudulhasandip/go-bookstore
 go 1.18
 
 require (
+	github.com/davecgh/go-spew v1.1.1
 	github.com/gorilla/mux v1.8.0
+	github.com/joho/godotenv v1.4.0
 	gorm.io/driver/postgres v1.4.5
 	gorm.io/gorm v1.24.2
 )
