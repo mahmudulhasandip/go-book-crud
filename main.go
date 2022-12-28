@@ -5,6 +5,7 @@ import (
 	"github.com/mahmudulhasandip/go-bookstore/pkg/routes"
 	"log"
 	"net/http"
+	"os"
 )
 
 //func init() {
@@ -17,5 +18,5 @@ func main() {
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
 	//log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), r))
-	log.Fatal(http.ListenAndServe(":"+`${{ PORT }}`, r))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), r))
 }
