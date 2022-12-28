@@ -17,5 +17,5 @@ func main() {
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)
 	//log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), r))
-	log.Fatal(http.ListenAndServe(":"+`${{ MY_VAR }}`, r))
+	log.Fatal(http.ListenAndServe(":"+`${{ PORT }}`, r))
 }
