@@ -9,7 +9,6 @@ import (
 
 //func init() {
 //  config.LoadEnv()
-//	log.Printf("pl")
 //}
 
 func main() {
